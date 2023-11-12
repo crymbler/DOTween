@@ -8,10 +8,13 @@ public class ChangeText : MonoBehaviour
 {
     [SerializeField] private Text _textMesh;
 
+    private int _delay = 4;
+    private int _delayRate = 3;
+
     private void Start()
     {
-        _textMesh.DOText("Я заменил текст!", 2);
-        _textMesh.DOText(" Я дополнил текст", 2).SetRelative().SetDelay(3);
-        _textMesh.DOText("Ошибка: Текст был взломан!!!", 2, true, ScrambleMode.All).SetDelay(7);
+        _textMesh.DOText("Я заменил текст!", _delayRate);
+        _textMesh.DOText(" Я дополнил текст", _delayRate).SetRelative().SetDelay(_delay);
+        _textMesh.DOText("Ошибка: Текст был взломан!!!", _delayRate, true, ScrambleMode.All).SetDelay(_delay);
     }
 }
