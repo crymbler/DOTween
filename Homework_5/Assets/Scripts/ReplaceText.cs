@@ -4,7 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
 
-public class ChangeText : MonoBehaviour
+public class ReplaceText : MonoBehaviour
 {
     [SerializeField] private Text _textMesh;
 

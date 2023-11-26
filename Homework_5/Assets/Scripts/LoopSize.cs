@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class ChangeSize : MonoBehaviour
+public class LoopSize : MonoBehaviour
 {
     private int _delay = 2;
     private int _loopCount = -1;

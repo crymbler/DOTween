@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class ChangeColor : MonoBehaviour
+[RequireComponent(typeof(SpriteRenderer))]
+public class DoFade : MonoBehaviour
 {
     private SpriteRenderer _spriteRenderer;
     private int _delayRate = 3;
